@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        fontFamily: 'RobotoCondensed',
         scaffoldBackgroundColor: Colors.white,
         useMaterial3: true,
       ),
@@ -142,18 +143,15 @@ class _MyHomePageState extends State<MyHomePage> {
                           TableRowInkWell(
                             child: Container(
                                 decoration: const BoxDecoration(
-                                    color: Colors.cyan,
                                     border: Border(
                                         bottom: BorderSide(width: 1.0, color: Colors.grey)
                                     )
                                 ),
                                 child: const Padding(
                                   padding: EdgeInsets.all(24.0),
-                                  child: Text(
-                                      'Validar'
-                                  ),
-                                )
-                            ),
+                                  child: Padding(padding: EdgeInsets.all
+                            )
+                          ),
                             onTap: () {
                               Navigator.push(
                                   cx,
@@ -207,6 +205,7 @@ class DetailsRoute extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(icon: const Icon(Icons.arrow_back), color: Colors.black, onPressed: () => Navigator.of(context).pop()),
         title: const Text('Second Route'),
       ),
       body: Center(

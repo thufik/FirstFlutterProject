@@ -144,13 +144,11 @@ class _MyHomePageState extends State<MyHomePage> {
                             child: Container(
                                 decoration: const BoxDecoration(
                                     border: Border(
-                                        bottom: BorderSide(width: 1.0, color: Colors.grey)
+                                        bottom: BorderSide(width: 3.0, color: Colors.grey)
                                     )
                                 ),
-                                child: const Padding(
-                                  padding: EdgeInsets.all(24.0),
-                                  child: Padding(padding: EdgeInsets.all
-                            )
+                                child: MaterialButton(onPressed: () {  },
+                                child: Text('x'))
                           ),
                             onTap: () {
                               Navigator.push(
@@ -170,32 +168,6 @@ class _MyHomePageState extends State<MyHomePage> {
       )
     );
   }
-  // Widget build(BuildContext context) {
-  //   return Scaffold(
-  //     appBar: AppBar(
-  //       backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-  //       title: Text(widget.title),
-  //     ),
-  //     body: Center(
-  //       child: body[_currentIndex]
-  //     ),
-  //     bottomNavigationBar: BottomNavigationBar(
-  //       selectedFontSize: 12.0,
-  //       unselectedFontSize: 12.0,
-  //       type: BottomNavigationBarType.fixed,
-  //       currentIndex: _currentIndex,
-  //       onTap: (int newIndex) {
-  //         setState(() {
-  //           _currentIndex = newIndex;
-  //         });
-  //       },
-  //       items: const [
-  //         BottomNavigationBarItem(label: 'teste', icon: Icon(Icons.home)),
-  //         BottomNavigationBarItem(label: 'teste', icon: Icon(Icons.add))
-  //       ],
-  //     )// This trailing comma makes auto-formatting nicer for build methods.
-  //   );
-  // }
 }
 
 class DetailsRoute extends StatelessWidget {

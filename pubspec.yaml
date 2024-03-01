@@ -30,6 +30,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  dots_indicator: ^2.0.0
+  camera: ^0.9.4+5 
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -64,6 +66,9 @@ flutter:
      - images/icon_add.png
      - images/icon_services.png
      - images/icon_options.png
+     - images/rgsp_icon.png
+     - images/wizard.png
+     - images/logo_cliente.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
